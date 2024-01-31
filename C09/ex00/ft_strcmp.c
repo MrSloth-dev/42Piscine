@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse.c                                 :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joao-pol <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: joao-pol <joao-pol@student.42porto.co      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 12:56:45 by joao-pol          #+#    #+#             */
-/*   Updated: 2024/01/13 19:24:50 by joao-pol         ###   ########.fr       */
+/*   Created: 2024/01/31 00:42:00 by joao-pol          #+#    #+#             */
+/*   Updated: 2024/01/31 00:54:08 by joao-pol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_reverse_alphabet(void)
+int	ft_scmp(char *s1, char *s2)
 {
-	char	c;
-
-	c = 'z';
-	while (c >= 'a')
+	int	diff;
+	int	i;
+	
+	diff = 0;
+	i = 0;
+	while ((s1[i] || s2[i]) && diff == 0)
 	{
-		write(1, &c, 1);
-		c--;
+		diff = s1[i] - s2[i];
+		i++;
 	}
+	return (diff);
 }
-/*
-int	main(void)
-{
-	ft_print_reverse_alphabet();
-
-	return (0);
-}
-*/

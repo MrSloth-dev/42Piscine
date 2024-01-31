@@ -1,33 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse.c                                 :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joao-pol <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: joao-pol <joao-pol@student.42porto.co      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 12:56:45 by joao-pol          #+#    #+#             */
-/*   Updated: 2024/01/13 19:24:50 by joao-pol         ###   ########.fr       */
+/*   Created: 2024/01/31 00:31:50 by joao-pol          #+#    #+#             */
+/*   Updated: 2024/01/31 00:38:42 by joao-pol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_reverse_alphabet(void)
+void	ft_swap(int *a, int *b)
 {
-	char	c;
-
-	c = 'z';
-	while (c >= 'a')
-	{
-		write(1, &c, 1);
-		c--;
-	}
+	int	tmp;
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
-/*
-int	main(void)
-{
-	ft_print_reverse_alphabet();
-
-	return (0);
-}
-*/
