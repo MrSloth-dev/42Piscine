@@ -29,5 +29,5 @@ int	count_words(char *str)
 #include <stdio.h>
 int	main()
 {
-	printf("%d", count_words("Hello my world"));
+	printf("%d", count_words("Hello my world and my friends"));
 }
