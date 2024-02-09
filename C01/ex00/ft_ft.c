@@ -22,9 +22,9 @@ int 	main(void)
 	int x;
 	int y;
 
-	i = 41;
+
 	ptr = &i;
-	*ptr = i
+	*ptr = i;
 	ft_ft(ptr);
 	x = i / 10 +'0';
 	y = i % 10 +'0';
